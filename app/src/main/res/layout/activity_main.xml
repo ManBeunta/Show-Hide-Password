@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.project.juke.showhidepassword.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EdEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorHint="#505050" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EdUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Username"
+            android:textColor="#000000"
+            android:textColorHint="#505050" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EdPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#505050" />
+
+        <cyd.awesome.material.AwesomeText
+            android:id="@+id/ImgShowPassword"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            app:awesome_font="material_design"
+            app:awesome_icon="MD_VISIBILITY_OFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BtnCekStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat stasus" />
+
+        <Button
+            android:id="@+id/BtnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hapus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TxtTampilkanEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email	: "
+            android:textColor="#000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/TxtTampilkanUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Username	: "
+            android:textColor="#000"
+            android:textSize="19sp" />
+    </LinearLayout>
+</LinearLayout>
